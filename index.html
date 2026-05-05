@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="logo.png" alt="Logo Yamoussoukro">
+                <img src="logo.svg" alt="Logo Yamoussoukro">
                 <h1>Yamoussoukro</h1>
             </div>
             <ul class="nav-links">
@@ -20,7 +20,7 @@
                 <li><a href="#galerie">Galerie</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
+            <div class="burger" aria-label="Menu" role="button" tabindex="0">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -118,19 +118,19 @@
                     <img src="images/basique_nuit.jpeg" alt="Vue de Yamoussoukro 1">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/Fondation 2.jpeg" alt="Vue de Yamoussoukro 2"  height="200" width="300"  >
+                    <img src="images/Fondation 2.jpeg" alt="Vue de Yamoussoukro 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/hotel-president.jpg" alt="Vue de Yamoussoukro 3" height="200" width="300">
+                    <img src="images/hotel-president.jpg" alt="Vue de Yamoussoukro 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/lacs2.jpeg" alt="Vue de Yamoussoukro 4" height="200" width="300">
+                    <img src="images/lacs2.jpeg" alt="Vue de Yamoussoukro 4">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/Inphb.jpg" alt="Vue de Yamoussoukro 5" height="200" width="300">
+                    <img src="images/Inphb.jpg" alt="Vue de Yamoussoukro 5">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/palais.jpeg" alt="Vue de Yamoussoukro 6" height="200" width="300">
+                    <img src="images/palais.jpeg" alt="Vue de Yamoussoukro 6">
                 </div>
             </div>
         </div>
@@ -146,9 +146,9 @@
                     <p><i class="fas fa-phone"></i> +225 XX XX XX XX</p>
                     <p><i class="fas fa-envelope"></i> info@tourisme-yamoussoukro.ci</p>
                     <div class="social-media">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -173,19 +173,15 @@
         </div>
     </section>
 
-    <div class="modal" id="siteModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
+    <div class="modal" id="siteModal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="close-modal" aria-label="Fermer">&times;</button>
             <div class="modal-body">
                 <div class="modal-image-container">
                     <div class="slider">
-                        <div class="slides">
-                            <img src="/placeholder.svg?height=400&width=600" alt="Image 1" class="slide">
-                            <img src="/placeholder.svg?height=400&width=600" alt="Image 2" class="slide">
-                            <img src="/placeholder.svg?height=400&width=600" alt="Image 3" class="slide">
-                        </div>
-                        <button class="slider-btn prev">&#10094;</button>
-                        <button class="slider-btn next">&#10095;</button>
+                        <div class="slides"></div>
+                        <button class="slider-btn prev" aria-label="Image précédente">&#10094;</button>
+                        <button class="slider-btn next" aria-label="Image suivante">&#10095;</button>
                     </div>
                 </div>
                 <div class="modal-info">
@@ -214,7 +210,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="logo.png" alt="Logo Yamoussoukro">
+                    <img src="logo.svg" alt="Logo Yamoussoukro">
                     <h3>Yamoussoukro Tourisme</h3>
                 </div>
                 <div class="footer-links">
@@ -236,7 +232,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Yamoussoukro Tourisme. Tous droits réservés.</p>
+                <p>&copy; 2026 Yamoussoukro Tourisme. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
